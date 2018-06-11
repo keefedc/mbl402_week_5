@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/add_student_activity">
+
+    <EditText
+        android:id="@+id/gr_in_score"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:background="#FF424242"
+        android:ems="10"
+        android:hint="@string/gr_score"
+        android:inputType="textPersonName|numberDecimal"
+        android:singleLine="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gr_selstu"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center_vertical"
+        android:text="@string/gr_stu_select"
+        app:layout_constraintEnd_toStartOf="@+id/gr_name_spin"
+        app:layout_constraintTop_toBottomOf="@+id/gr_in_score" />
+
+    <Spinner
+        android:id="@+id/gr_name_spin"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="13dp"
+        android:background="#FF424242"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gr_in_score" />
+
+    <TextView
+        android:id="@+id/gr_selsub"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center_vertical"
+        android:text="@string/gr_sub_select"
+        app:layout_constraintEnd_toStartOf="@+id/gr_sub_spin"
+        app:layout_constraintTop_toBottomOf="@+id/gr_selstu" />
+
+    <Spinner
+        android:id="@+id/gr_sub_spin"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="13dp"
+        android:background="#FF424242"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gr_name_spin" />
+
+    <Button
+        android:id="@+id/gr_gr_add"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/gr_add"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gr_sub_spin" />
+
+</android.support.constraint.ConstraintLayout>

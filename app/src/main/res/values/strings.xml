@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Week5AppDC6041</string>
+    <string name="student_avatar_context">Student Avatar</string>
+    <string name="class_id_label">Class Number:</string>
+    <string name="student_id_label">Student ID:</string>
+    <string name="grade_id_label">Grade ID:</string>
+    <string name="grade_label">Grade:</string>
+    <string name="score">Score:</string>
+    <string name="subject">Subject:</string>
+    <string name="fullname">Name:</string>
+    <string name="firstname">First Name:</string>
+    <string name="lastname">Last Name:</string>
+    <string name="stu_add">Add Student</string>
+    <string name="sub_add">Add Subject</string>
+    <string name="gr_add">Add Grade</string>
+    <string name="stu_add_fname_context">Enter First Name</string>
+    <string name="stu_add_lname_context">Enter Last Name</string>
+    <string name="sub_add_sub">Enter Subject</string>
+    <string name="sub_add_id">Enter Class Number</string>
+    <string name="gr_score">Enter Score</string>
+    <string name="gr_stu_select">Select A Student:</string>
+    <string name="gr_sub_select">Select A Class:</string>
+    <string name="stu_update">Update Student</string>
+    <string name="stu_delete">Delete Student</string>
+    <string name="sub_update">Update Subject</string>
+    <string name="sub_delete">Delete Subject</string>
+    <string name="gr_update">Update Subject</string>
+    <string name="gr_delete">Delete Subject</string>
+
+</resources>

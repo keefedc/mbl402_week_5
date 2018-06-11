@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/edit_student_activity">
+
+    <EditText
+        android:id="@+id/gr_edit_score"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:background="#FF424242"
+        android:ems="10"
+        android:hint="@string/gr_score"
+        android:inputType="textPersonName|numberDecimal"
+        android:singleLine="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gr_edit_selstu"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center_vertical"
+        android:text="@string/gr_stu_select"
+        app:layout_constraintEnd_toStartOf="@+id/gr_edit_name_spin"
+        app:layout_constraintTop_toBottomOf="@+id/gr_edit_score" />
+
+    <Spinner
+        android:id="@+id/gr_edit_name_spin"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="13dp"
+        android:background="#FF424242"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gr_edit_score" />
+
+    <TextView
+        android:id="@+id/gr_edit_selsub"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center_vertical"
+        android:text="@string/gr_sub_select"
+        app:layout_constraintEnd_toStartOf="@+id/gr_edit_sub_spin"
+        app:layout_constraintTop_toBottomOf="@+id/gr_edit_selstu" />
+
+    <Spinner
+        android:id="@+id/gr_edit_sub_spin"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="13dp"
+        android:background="#FF424242"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gr_edit_name_spin" />
+
+    <Button
+        android:id="@+id/gr_update"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="6.5dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/gr_update"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gr_edit_selsub" />
+
+    <Button
+        android:id="@+id/gr_delete"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="6.5dp"
+        android:layout_marginTop="13dp"
+        android:background="#ffcc0000"
+        android:text="@string/gr_delete"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/gr_edit_sub_spin" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+</android.support.constraint.ConstraintLayout>
